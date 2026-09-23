@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+
+</head>
+<body>
+    <!-- start screen -->
+    <h1>QUIZ APP</h1>
+
+<div class="box" id="start-screen">
+<p>10 Quiz questions ❓ </p>
+<p>Time 10 seconds each 🕑</p>
+<p>Total points 100 💯.</p>
+<p>Test your Basic HTML, CSS ,JAVASCRIPT 👁‍🗨</p>
+
+<button class="startbtn" onclick="startQuiz()">START QUIZ</button>
+</div>
+
+
+ <!-- QUIZ SCREEN -->
+    <div class="container" id="quiz-screen">
+
+        <div class="top">
+            <span id="question-number">Question 1 / 10</span>
+            <span id="score">Score: 0</span>
+        </div>
+
+        <div class="timer-box">
+            <span>Time Left: </span>
+            <span id="timer">10</span>
+            <span> sec</span>
+        </div>
+
+        <div class="progress">
+            <div id="timer-progress"></div>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div class="options">
+            <button class="option" onclick="selectAnswer(0)"></button>
+            <button class="option" onclick="selectAnswer(1)"></button>
+            <button class="option" onclick="selectAnswer(2)"></button>
+            <button class="option" onclick="selectAnswer(3)"></button>
+        </div>
+
+        <button id="next-btn" onclick="nextQuestion()">
+            NEXT QUESTION
+        </button>
+
+    </div>
+
+
+    <!-- RESULT SCREEN -->
+    <div class="container" id="result-box">
+
+        <h1>QUIZ COMPLETED 🎉</h1>
+
+        <h2>Your Score</h2>
+
+        <div id="final-score">0 / 100</div>
+
+        <p id="result-message"></p>
+
+        <button onclick="restartQuiz()">
+            PLAY AGAIN
+        </button>
+
+    </div>
+
+
+
+</body>
+<script src="app.js"></script>
+</html>
