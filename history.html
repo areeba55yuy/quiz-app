@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Quiz History</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body>
+
+    <div class="history-container">
+
+        <h1>MY QUIZ HISTORY</h1>
+
+        <p id="user-email">Checking your account...</p>
+
+        <div class="history-buttons">
+            <button onclick="window.location.href='index.html'">
+                BACK TO QUIZ
+            </button>
+
+          <button id="refresh-btn" onclick="refreshHistory()">
+                REFRESH HISTORY
+            </button>
+        </div>
+
+        <p id="history-message">Loading your history...</p>
+
+        <div id="history-list"></div>
+
+    </div>
+
+    <script type="module" src="history.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Quiz App</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="auth-box">
+
+        <h1>QUIZ APP</h1>
+
+        <p class="subtitle">Login to continue your quiz journey!</p>
+
+        <form id="login-form">
+
+            <input 
+                type="email" 
+                id="login-email" 
+                placeholder="Enter your email"
+                required
+            >
+
+            <input 
+                type="password" 
+                id="login-password" 
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit" class="main-btn">
+                Login
+            </button>
+
+        </form>
+
+        <div class="separator">OR</div>
+
+        <button type="button" class="google-btn" id="google-login">
+            <i class="fa-brands fa-google fa-2xl" style="color: rgb(194, 42, 170);"></i>
+            Continue with Google
+        </button>
+
+        <p id="message"></p>
+
+        
+        <p class="switch-link">
+            Don't have an account?
+            <a href="signup.html">Sign Up</a>
+        </p>
+
+       
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="login.js"></script>
+
+</body>
+
+</html>
